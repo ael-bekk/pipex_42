@@ -67,3 +67,9 @@ You can run any command that works in the shell and is in the PATH environment v
 		</tr>
 	</tbody>
 </table>
+
+## 📝 License
+
+This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
+
+---
