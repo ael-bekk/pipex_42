@@ -6,7 +6,7 @@
 /*   By: ael-bekk <ael-bekk <ael-bekk@student.13    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 09:09:32 by ael-bekk          #+#    #+#             */
-/*   Updated: 2022/02/19 11:22:16 by ael-bekk         ###   ########.fr       */
+/*   Updated: 2022/02/20 10:01:30 by ael-bekk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main(int ac, char **av, char **env)
 	if (access(av[1], R_OK) == ERROR)
 	{
 		print_error(av[1], strerror(errno));
-		av[1] =NULL;
+		av[2][0] = -1;
 	}
 	cmds = parcing(2, &av[2], env);
 	do_pipe(cmds, env, 2, fd);
