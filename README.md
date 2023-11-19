@@ -1,7 +1,6 @@
 # Pipex
 
 This project consists of reproducing the behavior of the [shell pipe](https://www.geeksforgeeks.org/piping-in-unix-or-linux/), redirecting STDIN and STDOUT using [pipes](https://www.geeksforgeeks.org/pipe-system-call/).<br><br>
-![jisokang's so_long Score](https://badge42.herokuapp.com/api/project/ael-bekk/pipex)
 
 ### What is Pipex?
 Pipex is an individual project at [42](42sp.org.br) that requires us to create a program that simulates the behavior of the [shell pipe](https://www.geeksforgeeks.org/piping-in-unix-or-linux/), receiving a file or reading from the [STDIN](https://en.wikipedia.org/wiki/Standard_streams) and redirecting to a sequence of commands that will be written to the output file. To build the program it is necessary to create child processes using [fork()](https://www.geeksforgeeks.org/fork-system-call/) communicating with the parent process through [pipe()](https://www.geeksforgeeks.org/pipe-system-call/), manipulating the environment variable, testing if the command exists or has execution permission, for example, printing errors to [STDERR](https://en.wikipedia.org/wiki/Standard_streams) when necessary, returning the correct [status code](https://www.geeksforgeeks.org/exit-codes-in-c-c-with-examples/).
